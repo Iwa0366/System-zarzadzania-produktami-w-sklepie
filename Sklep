@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int id;
+    char nazwa[50];
+    float cena;
+    int ilosc;
+
+    printf("Witaj w systemie zarządzania produktami w sklepie!\n");
+    printf("Podaj ID produktu: ");
+    scanf_s("%d", &id);
+    printf("Podaj nazwe produktu: ");
+    scanf_s("%s", &nazwa, 50);
+    printf("Podaj cene produktu: ");
+    scanf_s("%f", &cena);
+    printf("Podaj ilosc produktu: ");
+    scanf_s("%d", &ilosc);
+
+    printf("\nProdukt: \n");
+    printf("ID: %d\n",id);
+    printf("nazwa: %s\n", nazwa);
+    printf("cena: %.2f\n", cena);
+    printf("ilosc: %d\n", ilosc);
+
+    return 0;
+}
